@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>
+                        id
+                    </th>
+                    <th>
+                        title
+                    </th>
+                    <th>
+                        views
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <input type="text" placeholder="id (để trống khi tạo mới)" id="id_txt" />
+        <input type="text" placeholder="title" id="title_txt" />
+        <input type="text" placeholder="views" id="views_txt" />
+        <input type="submit" value="Save" onclick="Save()">
+    </div>
+
+    <hr />
+    <h3>Comments</h3>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>id</th>
+                    <th>text</th>
+                    <th>postId</th>
+                    <th>actions</th>
+                </tr>
+            </thead>
+            <tbody id="comments-body"></tbody>
+        </table>
+    </div>
+    <div>
+        <input type="text" placeholder="id (để trống khi tạo mới)" id="comment_id_txt" />
+        <input type="text" placeholder="text" id="comment_text_txt" />
+        <input type="text" placeholder="postId" id="comment_postid_txt" />
+        <input type="submit" value="Save Comment" onclick="SaveComment()">
+    </div>
+</body>
+
+    <script src="main.js"></script>
+</html>
